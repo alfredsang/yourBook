@@ -46,5 +46,10 @@ yourBook Reader
 
 	>git push -u origin master
 
+获取服务器最新内容
+
+	>git pull -f --all
+
+
 
 目前这些就够用了。
