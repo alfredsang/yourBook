@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TopBarView.h"
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController{
+    TopBarView *_topBar;
+    int c;
+}
 
 @property(nonatomic,retain,readwrite) IBOutlet UITextView *textContentView;
 

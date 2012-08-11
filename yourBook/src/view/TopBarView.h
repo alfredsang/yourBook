@@ -10,4 +10,10 @@
 
 @interface TopBarView : UIView
 
+@property(nonatomic,retain,readwrite) IBOutlet UILabel *file_name;
+@property(nonatomic,retain,readwrite) IBOutlet UILabel *processing;
+@property(nonatomic,retain,readwrite) IBOutlet UILabel *cur_time;
+
+-(void)set:(NSString *)fname andProcessing:(NSString *)p andCurTime:(NSString *)t;
+
 @end

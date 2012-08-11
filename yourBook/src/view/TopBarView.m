@@ -10,6 +10,8 @@
 
 @implementation TopBarView
 
+@synthesize cur_time,processing,file_name;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -28,5 +30,11 @@
     // Drawing code
 }
 */
+
+-(void)set:(NSString *)fname andProcessing:(NSString *)p andCurTime:(NSString *)t{
+    self.file_name.text = fname;
+    self.processing.text = p;
+    self.cur_time.text = t;
+}
 
 @end

@@ -31,6 +31,12 @@
     // Do any additional setup after loading the view from its nib.
     [self readFile];
     [self addTapGesture];
+    
+    
+    _topBar = (TopBarView *)[[[NSBundle mainBundle] loadNibNamed:@"TopBar" owner:self options:nil] objectAtIndex:0];
+    
+    _topBar.frame=CGRectMake(0, -40, 320, 40);
+    [self.view addSubview:_topBar];
 }
 
 -(void)addTapGesture{
@@ -43,9 +49,19 @@
 }
 
 -(void)mytap: (UITapGestureRecognizer *)recognizer{
-    
+    c++;
     NSLog(@"232");
-
+    
+    if (c%2==0) {
+        CGRect f = _topBar.frame;
+        f.origin.y=20;
+        _topBar.frame = f;
+    }else {
+        CGRect f = _topBar.frame;
+        f.origin.y=-40;
+        _topBar.frame = f;
+    }
+    [_topBar set:@"sf" andProcessing:@"dsf" andCurTime:@"15:34"];
 }
 
 -(void)readFile{
