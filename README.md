@@ -31,15 +31,19 @@ yourBook Reader
 ## 源码
 
 复制源码
+
 	> git clone https://github.com/shiren1118/yourBook.git
 	
 增加
+
 	>git add .|文件名称
 	
 提交
+
 	>git commit -am "提交内容说明"
 	
 推送到服务器
+
 	>git push -u origin master
 
 
