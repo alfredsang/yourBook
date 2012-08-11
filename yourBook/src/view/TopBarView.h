@@ -1,5 +1,5 @@
 //
-//  RootViewController.h
+//  TopBarView.h
 //  yourBook
 //
 //  Created by alfred sang on 12-8-11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UIViewController
-
-@property(nonatomic,retain,readwrite) IBOutlet UITextView *textContentView;
+@interface TopBarView : UIView
 
 @end

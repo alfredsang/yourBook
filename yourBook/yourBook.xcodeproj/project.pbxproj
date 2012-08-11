@@ -90,6 +90,8 @@
 		A6271E2E15D60FE700BA03B9 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A6271E2815D60FE700BA03B9 /* FMDatabaseQueue.m */; };
 		A6271E2F15D60FE700BA03B9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A6271E2A15D60FE700BA03B9 /* FMResultSet.m */; };
 		A6271E3515D6130E00BA03B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6271E3415D6130E00BA03B9 /* README.md */; };
+		A6271E3C15D642A900BA03B9 /* TopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6271E3B15D642A900BA03B9 /* TopBar.xib */; };
+		A6271E4B15D6438100BA03B9 /* TopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6271E4A15D6438100BA03B9 /* TopBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -225,6 +227,9 @@
 		A6271E2915D60FE700BA03B9 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		A6271E2A15D60FE700BA03B9 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		A6271E3415D6130E00BA03B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A6271E3B15D642A900BA03B9 /* TopBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBar.xib; sourceTree = "<group>"; };
+		A6271E4915D6438100BA03B9 /* TopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBarView.h; sourceTree = "<group>"; };
+		A6271E4A15D6438100BA03B9 /* TopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +470,7 @@
 		A6271E1B15D60DF200BA03B9 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				A6271E4815D6436900BA03B9 /* view */,
 				A6271E1C15D60DF200BA03B9 /* image */,
 				A6271E1D15D60DF200BA03B9 /* xib */,
 			);
@@ -482,6 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				A6271E1E15D60E0500BA03B9 /* RootViewController.xib */,
+				A6271E3B15D642A900BA03B9 /* TopBar.xib */,
 			);
 			path = xib;
 			sourceTree = "<group>";
@@ -502,6 +509,16 @@
 			);
 			path = fmdb;
 			sourceTree = "<group>";
+		};
+		A6271E4815D6436900BA03B9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A6271E4915D6438100BA03B9 /* TopBarView.h */,
+				A6271E4A15D6438100BA03B9 /* TopBarView.m */,
+			);
+			name = view;
+			path = src/view;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -584,6 +601,7 @@
 				A6271E0615D60CCB00BA03B9 /* cx_db.sqlite in Resources */,
 				A6271E1F15D60E0500BA03B9 /* RootViewController.xib in Resources */,
 				A6271E3515D6130E00BA03B9 /* README.md in Resources */,
+				A6271E3C15D642A900BA03B9 /* TopBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +657,7 @@
 				A6271E2D15D60FE700BA03B9 /* FMDatabasePool.m in Sources */,
 				A6271E2E15D60FE700BA03B9 /* FMDatabaseQueue.m in Sources */,
 				A6271E2F15D60FE700BA03B9 /* FMResultSet.m in Sources */,
+				A6271E4B15D6438100BA03B9 /* TopBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
